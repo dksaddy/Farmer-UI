@@ -9,8 +9,14 @@
 </head>
 
 <body>
+
+    <div class="header">
+        <h1 style="color: white;">কৃষকের হাট</h1>
+    </div>
+
+
     <div class="container">
-        <button class="home-btn" onclick="window.location.href='index.html'">ঘরে ফিরুন</button>
+        <button class="home-btn" onclick="window.location.href='index.html'"><h2> 🏠 ঘরে ফিরে যান</h2></button>
         <h1>আমার অর্ডার তালিকা</h1>
 
         <div class="order-item">
@@ -31,20 +37,18 @@
 
     <script>
         document.querySelector('.accept-btn').addEventListener('click', function () {
-            alert('আপনি দুই কেজি আলুর অর্ডার গ্রহণ করেছেন');
             window.location.href='order-details.html';
         });
 
 
         document.querySelector('.reject-btn').addEventListener('click', function () {
-            alert('আপনি দুই কেজি আলুর অর্ডার প্রত্যাখ্যান করেছেন');
             window.location.href='index.html';
         });
 
 
         // Play audio when 'শুনুন' button is clicked
         document.querySelector('.audio-btn').addEventListener('click', function () {
-            let audio = new Audio('./Sounds/consent.mp3'); // Replace with actual audio file URL
+            let audio = new Audio('./Sounds/orderlist.mp3'); // Replace with actual audio file URL
             audio.play();
         });
 

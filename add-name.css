@@ -34,7 +34,7 @@ body {
     padding: 10px;
     width: 80%;
     max-width: 500px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -56,10 +56,10 @@ body {
 
 /* Submit button styling */
 .submit-button {
-    background-color: #a30000;
+    background-color: #2f9e44;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 5px 10px;
     font-size: 1.2rem;
     border-radius: 10px;
     cursor: pointer;

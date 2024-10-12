@@ -29,14 +29,14 @@
         <img src="camera-placeholder.jpg" alt="Image Upload" class="market-image" id="displayImage">
 
         <!-- Second Listen Button -->
-        <div class="audio-button">
+        <div class="audio-button" style="margin-top: 90px;">
             <button class="audio-control" onclick="playAudio2()">
                 <span class="icon">&#128264;</span> শুনুন
             </button>
         </div>
 
         <!-- Submit Button -->
-        <button class="submit-button" onclick="window.location.href='add-name.html'">জমা দিন</button>
+        <button class="submit-button" onclick="window.location.href='add-name.html'"><h4>&#10004; জমা দিন</h4></button>
 
         <!-- Hidden File Input for Image Upload -->
         <input type="file" id="fileUpload" style="display: none;" accept="image/*" onchange="previewImage(event)">
@@ -49,7 +49,7 @@
         }
 
         function playAudio2() {
-            var audio = new Audio('./Sounds/porobortidhaap.mp3');  // Replace with your audio file
+            var audio = new Audio('./Sounds/nextphase.mp3');  // Replace with your audio file
             audio.play();
         }
 

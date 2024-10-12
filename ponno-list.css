@@ -7,11 +7,13 @@
 
 body {
     background-color: #f7f3db;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+}
+
+.header {
+    background-color: #b00000;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }
 
 .container {
@@ -26,7 +28,7 @@ h1 {
 }
 
 .back-button {
-    background-color: #d32f2f;
+    background-color: #b00000;
     color: white;
     padding: 10px 20px;
     border: none;
