@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishoker Haat</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header red">
+            <span class="icon">⮝</span> 
+            <span class="title">কৃষকের হাট</span>
+        </div>
+        
+        <!-- First Button Section -->
+        <div class="button-section">
+            <div class="listen-button">
+                <button class="audio-button" onclick="playAudio('audio1')">🔊 শুনুন</button>
+            </div>
+            <button class="action-button red">
+                ☰ আমার পণ্যের তালিকা দেখুন
+            </button>
+        </div>
+
+        <!-- Second Button Section -->
+        <div class="button-section">
+            <div class="listen-button">
+                <button class="audio-button" onclick="playAudio('audio2')">🔊 শুনুন</button>
+            </div>
+            <button class="action-button green">
+                + আপনার পণ্য যোগ করুন
+            </button>
+        </div>
+
+        <!-- Third Button Section -->
+        <div class="button-section">
+            <div class="listen-button">
+                <button class="audio-button" onclick="playAudio('audio3')">🔊 শুনুন</button>
+            </div>
+            <button class="action-button yellow">
+                🏠 আমার অর্ডার তালিকা
+            </button>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="audio1" src="./Sounds/পন্যের_তালিকা_দেখুন.mp3"></audio>
+    <audio id="audio2" src="audio2.mp3"></audio>
+    <audio id="audio3" src="audio3.mp3"></audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
