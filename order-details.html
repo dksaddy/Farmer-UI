@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="order-details.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>কৃষকের হাট</h1>
+    </div>
+
+    <h1 style="text-align: center; margin: 10px;">আপনার পণ্যের অর্ডার বিবরণ </h1>
+
+    <div class="back-button-container">
+        <button class="back-button" onclick="window.location.href='index.html'">ঘরে ফিরে যান</button>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="potato.webp" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>আলু</h2>
+                <p><strong>দাম:</strong> 12.00 ৳</p>
+                <p><strong>পরিমাণ:</strong> 2 কেজি</p>
+                <p><strong>মোট:</strong> 24 ৳</p>
+                <p><strong>গ্রাহকের নাম:</strong> মহিউদ্দিন সাদিক</p>
+                <p><strong>ঠিকানা:</strong> নতুন বাজার, ঢাকা</p>
+                <p><strong>মোবাইল:</strong> ০১৭১৪-২১৩৪৫৬</p>
+            </div>
+            <button class="audio-control" onclick="playAudio()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = new Audio('./Sounds/orderDetails.mp3');  // Replace with your audio file
+            audio.play();
+        }
+
+    </script>
+
+</body>
+
+</html>

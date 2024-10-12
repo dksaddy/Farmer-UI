@@ -32,17 +32,13 @@
     <script>
         document.querySelector('.accept-btn').addEventListener('click', function () {
             alert('আপনি দুই কেজি আলুর অর্ডার গ্রহণ করেছেন');
-            this.disabled = true; // Disable the button after it's clicked
-            this.style.backgroundColor = '#cccccc'; // Optionally change the button color to indicate it's disabled
-            this.style.cursor = 'not-allowed'; // Change the cursor to show it's disabled
+            window.location.href='order-details.html';
         });
 
 
         document.querySelector('.reject-btn').addEventListener('click', function () {
             alert('আপনি দুই কেজি আলুর অর্ডার প্রত্যাখ্যান করেছেন');
-            this.disabled = true; // Disable the button after it's clicked
-            this.style.backgroundColor = '#cccccc'; // Optionally change the button color to indicate it's disabled
-            this.style.cursor = 'not-allowed'; // Change the cursor to show it's disabled
+            window.location.href='index.html';
         });
 
 

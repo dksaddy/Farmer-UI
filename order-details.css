@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf7e5;
+    height: 100vh;
+}
+
+.header {
+    background-color: #b00000;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Container for Centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Product Info Styling */
+.product-info {
+    margin-top: 15px;
+}
+
+.product-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.audio-control {
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.back-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.back-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
