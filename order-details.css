@@ -12,6 +12,7 @@ body {
     height: 100vh;
 }
 
+/* Header Styling */
 .header {
     background-color: #b00000;
     padding: 20px;
@@ -24,6 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 /* Card Styling */
@@ -33,6 +35,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 90%;
+    max-width: 500px;
     text-align: center;
     padding: 20px;
 }
@@ -40,7 +43,8 @@ body {
 /* Product Image Styling */
 .product-image {
     width: 100%;
-    height: 200px;
+    height: auto;
+    max-height: 200px;
     border-radius: 10px;
 }
 
@@ -60,6 +64,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Audio Control Button */
 .audio-control {
     background-color: #888;
     color: white;
@@ -71,6 +76,7 @@ body {
     margin-top: 15px;
 }
 
+/* Back Button Styling */
 .back-button-container {
     display: flex;
     align-items: center;
@@ -86,5 +92,27 @@ body {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
 
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Mobile Styling */
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .audio-control {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .product-info h2 {
+        font-size: 1.3em;
+    }
 }
