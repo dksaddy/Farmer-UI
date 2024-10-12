@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষকের হাট</title>
+    <link rel="stylesheet" href="summary.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>কৃষকের হাট</h1>
+    </div>
+
+    <div class="container">
+        <!-- Listen Button -->
+        <div class="audio-button">
+            <button class="audio-control" onclick="playAudio()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+
+        <!-- Product Image and Details -->
+        <div class="product-card">
+            <img src="potato.webp" alt="Market Image" class="product-image">
+            <div class="product-info">
+                <p>পরিমাণ: ৫০</p>
+                <p>দাম: ১৫ ৳</p>
+            </div>
+        </div>
+
+        <!-- Submit and Home Buttons -->
+        <button class="submit-button" onclick="window.location.href='ponno-list.html'">জমা দিন</button>
+        <button class="home-button" onclick="goHome()">হোমে ফিরে যান</button>
+    </div>
+
+    <script>
+        // Function for playing audio when clicking the listen buttons
+        function playAudio() {
+            var audio = new Audio('./Sounds/productoverview.mp3');  // Replace with your audio file
+            audio.play();
+        }
+
+        // Function to go home
+        function goHome() {
+            window.location.href = "index.html"; // Replace with the correct home page URL
+        }
+
+    </script>
+</body>
+
+</html>

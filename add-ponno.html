@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষকের হাট</title>
+    <link rel="stylesheet" href="add-ponno.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>কৃষকের হাট</h1>
+    </div>
+
+    <div class="container">
+        <img src="market.jpeg" alt="Market Image" class="market-image">
+
+        <div class="audio-button">
+            <button class="audio-control" onclick="playAudio()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+
+        <button class="submit-button" onclick="window.location.href='add-image.html'">জমা দিন</button>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = new Audio('./Sounds/ponnobikri.mp3');  // Replace with your audio file
+            audio.play();
+        }
+
+    </script>
+
+</body>
+
+</html>

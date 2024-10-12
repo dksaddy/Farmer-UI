@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষকের হাট</title>
+    <link rel="stylesheet" href="add-image.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>কৃষকের হাট</h1>
+    </div>
+
+    <div class="container">
+        <!-- First Listen Button -->
+        <div class="audio-button">
+            <button class="audio-control" onclick="playAudio1()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+
+        <!-- Image Section -->
+        <label for="fileUpload" class="upload-label">
+            <img src="selfie.png" alt="Camera Icon" class="camera-icon"> ছবি যোগ করুন
+        </label>
+        <img src="camera-placeholder.jpg" alt="Image Upload" class="market-image" id="displayImage">
+
+        <!-- Second Listen Button -->
+        <div class="audio-button">
+            <button class="audio-control" onclick="playAudio2()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="submit-button" onclick="window.location.href='add-name.html'">জমা দিন</button>
+
+        <!-- Hidden File Input for Image Upload -->
+        <input type="file" id="fileUpload" style="display: none;" accept="image/*" onchange="previewImage(event)">
+    </div>
+
+    <script>
+        function playAudio1() {
+            var audio = new Audio('./Sounds/ponnerchobi.mp3');  // Replace with your audio file
+            audio.play();
+        }
+
+        function playAudio2() {
+            var audio = new Audio('./Sounds/porobortidhaap.mp3');  // Replace with your audio file
+            audio.play();
+        }
+
+        // Function to handle image preview
+        function previewImage(event) {
+            const image = document.getElementById('displayImage');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        }
+
+    </script>
+
+</body>
+
+</html>

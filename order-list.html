@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Orders List</title>
     <link rel="stylesheet" href="order-list.css">
 </head>
+
 <body>
     <div class="container">
         <button class="home-btn" onclick="window.location.href='index.html'">ঘরে ফিরুন</button>
         <h1>আমার অর্ডার তালিকা</h1>
-        
+
         <div class="order-item">
             <h2>1. Potato</h2>
             <p>আপনার কাছ থেকে ২ কেজি আলু কিনতে ইচ্ছুক</p>
-            
+
             <div class="order-details">
-                <img src="./potato.webp" alt="Potatoes" class="potato-image"> 
+                <img src="./potato.webp" alt="Potatoes" class="potato-image">
                 <button class="audio-btn">🔊 শুনুন</button>
             </div>
-            
+
             <div class="actions">
                 <button class="accept-btn">&#10004;</button>
                 <button class="reject-btn">&#10006;</button>
@@ -27,6 +29,30 @@
         </div>
     </div>
 
-    <script src="order-list.js"></script>
+    <script>
+        document.querySelector('.accept-btn').addEventListener('click', function () {
+            alert('You accepted the order!');
+            this.disabled = true; // Disable the button after it's clicked
+            this.style.backgroundColor = '#cccccc'; // Optionally change the button color to indicate it's disabled
+            this.style.cursor = 'not-allowed'; // Change the cursor to show it's disabled
+        });
+
+
+        document.querySelector('.reject-btn').addEventListener('click', function () {
+            alert('You rejected the order.');
+            this.disabled = true; // Disable the button after it's clicked
+            this.style.backgroundColor = '#cccccc'; // Optionally change the button color to indicate it's disabled
+            this.style.cursor = 'not-allowed'; // Change the cursor to show it's disabled
+        });
+
+
+        // Play audio when 'শুনুন' button is clicked
+        document.querySelector('.audio-btn').addEventListener('click', function () {
+            let audio = new Audio('./Sounds/consent.mp3'); // Replace with actual audio file URL
+            audio.play();
+        });
+
+    </script>
 </body>
+
 </html>

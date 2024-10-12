@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষকের হাট</title>
+    <link rel="stylesheet" href="add-name.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>কৃষকের হাট</h1>
+    </div>
+
+    <div class="container">
+        <!-- First Listen Button -->
+        <div class="audio-button">
+            <button class="audio-control" onclick="playAudio1()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+
+        <!-- Input Field for Product Name -->
+        <label for="productName" class="product-label">পণ্যের পরিমাণ লিখুন</label>
+        <input type="text" id="productName" class="product-input" placeholder="পণ্যের পরিমাণ লিখুন">
+
+        <!-- Second Listen Button -->
+        <div class="audio-button">
+            <button class="audio-control" onclick="playAudio2()">
+                <span class="icon">&#128264;</span> শুনুন
+            </button>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="submit-button" onclick="window.location.href='add-price.html'">জমা দিন</button>
+    </div>
+
+    <script>
+        function playAudio1() {
+            var audio = new Audio('./Sounds/ponnerporiman.mp3');  // Replace with your audio file
+            audio.play();
+        }
+
+        function playAudio2() {
+            var audio = new Audio('./Sounds/porobortidhaap.mp3');  // Replace with your audio file
+            audio.play();
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>আপনার পণ্যের তালিকা দেখুন</title>
     <link rel="stylesheet" href="ponno-list.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Back Button -->
@@ -18,12 +20,12 @@
         <div class="product-card">
             <img src="./potato.webp" alt="Potato Image" class="product-image">
             <div class="product-details">
-                <p><strong>পণ্যের নাম:</strong> Potato</p>
-                <p><strong>প্রতি কেজি দাম:</strong> 15 ট</p>
-                <p><strong>বিক্রিত পণ্য:</strong> 2 কেজি</p>
-                <p><strong>অবশিষ্ট পণ্য:</strong> 48 কেজি</p>
-                <p><strong>মোট পণ্য:</strong> 50 কেজি</p>
-                <p><strong>মোট আয়:</strong> 2 * 15 = 24 ট</p>
+                <p><strong>পণ্যের নাম:</strong> আলু</p>
+                <p><strong>প্রতি কেজি দাম:</strong> ১২ ৳</p>
+                <p><strong>বিক্রিত পণ্য:</strong> ২ কেজি</p>
+                <p><strong>অবশিষ্ট পণ্য:</strong> ৪৮ কেজি</p>
+                <p><strong>মোট পণ্য:</strong> ৫০ কেজি</p>
+                <p><strong>মোট আয়:</strong> ২ * ১২ = ২৪ ৳</p>
             </div>
             <!-- Audio Button -->
             <button class="audio-button" onclick="playAudio('audio1')">🔊 শুনুন</button>
@@ -33,6 +35,13 @@
     <!-- Audio Elements -->
     <audio id="audio1" src="./Sounds//despo.mp3"></audio>
 
-    <script src="ponno-list.js"></script>
+    <script>
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            audio.play();
+        }
+
+    </script>
 </body>
+
 </html>

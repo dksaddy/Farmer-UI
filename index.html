@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="bn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishoker Haat</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header red">
-            <span class="icon">⮝</span> 
+            <span class="icon">⮝</span>
             <span class="title">কৃষকের হাট</span>
         </div>
-        
+
         <!-- First Button Section -->
         <div class="button-section">
             <div class="listen-button">
@@ -49,6 +51,19 @@
     <audio id="audio2" src="./Sounds/notun_ponno_add_korun.mp3"></audio>
     <audio id="audio3" src="./Sounds/ponner_biboron.mp3"></audio>
 
-    <script src="index.js"></script>
+    <script>
+        // Function to play audio
+        function playAudio(audioId) {
+            var audio = document.getElementById(audioId);
+            audio.play();
+        }
+
+        // Function to redirect to another page
+        function redirectPage(url) {
+            window.location.href = url;
+        }
+
+    </script>
 </body>
+
 </html>

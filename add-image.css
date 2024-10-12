@@ -1,0 +1,98 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf7e3;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+.header {
+    background-color: #b00000;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Container */
+.container {
+    margin-top: 30px;
+}
+
+/* Market Image Styling */
+.market-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Audio Button */
+.audio-button {
+    margin: 10px 0;
+}
+
+.audio-control {
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* Upload Label */
+.upload-label {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    cursor: pointer;
+    background-color: #5e5757;
+    color: white;
+    margin-top: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 150px; /* Fixed width for better control */
+    transition: background-color 0.3s ease;
+}
+
+.camera-icon {
+    width: 60px; /* Reduced icon size */
+    height: 60px;
+    margin-right: 10px; /* Spacing between icon and label text */
+    vertical-align: middle;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #b00000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #900000;
+}
+
+/* Hide the input field */
+#fileUpload {
+    display: none;
+}
